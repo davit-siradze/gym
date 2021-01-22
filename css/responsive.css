@@ -21,13 +21,15 @@
         text-align: center;
     }
     .whoambriimg {
-        left: 4%;
-        top: 50px;
+        left: 50%;
+        top: 90px;
         width: 30%;
+        transform: translate(-50%,-10px);
     }
     .whoambritext {
-        top: 10%;
-        left: 38%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .whoh {
         font-size: 15px;
