@@ -2,12 +2,28 @@
  */
  @import url("https://cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css");
  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
-body {
+ @import url("https://cdn.web-fonts.ge/fonts/bpg-nino-mtavruli-bold/css/bpg-nino-mtavruli-bold.min.css");
+
+ body {
     background-color: #000;
-    font-family: 'Raleway', sans-serif;
+    font-family: "BPG Nino Mtavruli Bold", sans-serif;
     
 }
+.logo {
+    display: flex;
+}
+.logo a {
+    position: absolute;
+    font-size: 24px;
+    color: #fff;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%);
 
+}
+.logo a span {
+    color: #BC9354;
+}
 /* Change Lang */
 .changelang {
   position: absolute;
@@ -34,21 +50,6 @@ body {
   transition: 0.576s ease-in;
 }
 /* Change Lang End */
-.logo {
-    display: flex;
-}
-.logo a {
-    position: absolute;
-    font-size: 24px;
-    color: #fff;
-    top: 25px;
-    left: 50%;
-    transform: translate(-50%);
-
-}
-.logo a span {
-    color: #BC9354;
-}
 /* Burg men */
 .navbar {
     width: 300px;
@@ -116,7 +117,7 @@ body {
     text-transform: uppercase;
     position: relative;
     padding: 4px 0;
-    font-family: "BPG Arial", sans-serif;
+    font-family: "BPG Nino Mtavruli Bold", sans-serif;
 
 }
 .nav-link::before,
@@ -219,7 +220,7 @@ button {
 }
 .custom-btn {
     padding: 10px 25px;
-    font-family: 'Raleway', sans-serif;
+    font-family: "BPG Nino Mtavruli Bold", sans-serif;
     font-weight: 500;
     background: transparent;
     outline: none !important;
@@ -307,6 +308,7 @@ button {
 } */
 .anatompone{
     color: #fff;
+    line-height: 17px;
     position: relative;
     width: 30%;
     left: 7%;
@@ -316,6 +318,7 @@ button {
     display: flex;
 }
 .anatomptwo {
+    line-height: 17px;
     position: absolute;
     width: 40%;
     top: 149px;
@@ -328,8 +331,8 @@ button {
 
 .customs-btn {
     padding: 10px 25px;
-    font-family: 'Raleway', sans-serif;
     font-weight: 500;
+    font-family: "BPG Nino Mtavruli Bold", sans-serif;
     background: transparent;
     outline: none !important;
     color: #fff;

@@ -7,44 +7,108 @@ menuIcon.addEventListener("click", () => {
 });
 
 
-// Portf
-
-
-
-function Parallax(options){
-  options = options || {};
-  this.nameSpaces = {
-    wrapper: options.wrapper || '.parallax',
-    layers: options.layers || '.parallax-layer',
-    deep: options.deep || 'data-parallax-deep'
-    
-  };
-  this.init = function() {
-    var self = this,
-        parallaxWrappers = document.querySelectorAll(this.nameSpaces.wrapper);
-    for(var i=0; i< parallaxWrappers.length; i++) {
-      (function(i) {
-        parallaxWrappers[i].addEventListener('mousemove', function(e){
-          var x = e.clientX,
-              y = e.clientY,
-              layers = parallaxWrappers[i].querySelectorAll(self.nameSpaces.layers);
-          for(var j=0; j<layers.length; j++){
-             (function(j){
-               var deep = layers[j].getAttribute(self.nameSpaces.deep),
-                   disallow = layers[j].getAttribute('data-parallax-disallow'),
-                   itemX = (disallow && disallow === 'x') ? 0 : x / deep,
-                   itemY = (disallow && disallow === 'y') ? 0 : y / deep;
-               if(disallow && disallow === 'both') return;
-               layers[j].style.transform = 'translateX(' + itemX + '%) translateY(' + itemY + '%)';
-             })(j);
-          }
-        })
-      })(i);
-    }
-  };
-  this.init();
-  return this;
-}
-window.addEventListener('load', function(){
-  new Parallax();
+// webAnimation
+// Home Page
+TweenMax.from(".logo", 1.6, {
+  delay: 0.8,
+  opacity: 0,
+  y: 20,
+  ease: Expo.easeInOut
 });
+
+TweenMax.from(".hamburger-menu", 1.6, {
+  delay:0.8,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInOut
+});
+TweenMax.from(".socialleft", 1.6, {
+  delay: 0.8,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInOut
+});
+TweenMax.from(".whoambrip",2.9 , {
+  delay: 0.8,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInOut
+});
+TweenMax.from(".whoambri",2.3, {
+  delay: 2.1,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInout
+});
+TweenMax.from(".button",2.3, {
+  delay: 0.8,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInout
+});
+TweenMax.from(".whoambrianatomy",2.3, {
+  delay: 1.9,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInout
+});
+
+
+TweenMax.from(".right",3.5, {
+  delay: 2.8,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInout
+});
+TweenMax.from(".whoh",2.3, {
+  delay: 2.4,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInout
+});
+// Anatomy Page
+TweenMax.from(".imgwraper",2.3, {
+  delay: 1.4,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInout
+});
+
+TweenMax.from(".anatompone",2.3, {
+  delay: 1.9,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInout
+});
+TweenMax.from(".anatomptwo",2.3, {
+  delay: 2.4,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInout
+});
+
+TweenMax.from(".customs-btn",2.3, {
+  delay: 2.9,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInout
+});
+TweenMax.from(".geoa", 2.3, {
+  delay: 1.8,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInOut
+});
+
+TweenMax.from(".enga", 2.3, {
+  delay: 1.4,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInOut
+});
+
+
+
+
+
+
