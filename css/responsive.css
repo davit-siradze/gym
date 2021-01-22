@@ -1,0 +1,49 @@
+@media screen and (max-width: 780px){
+    .right{
+        top:100%;
+        left: 20%;
+    }
+    .right a {
+        transform: rotate(0deg);
+        font-size: 20px;
+        opacity: 0.7;
+        filter: blur(1.9px);
+    }
+}
+
+
+
+@media screen and (max-width: 390px)
+{
+    .socialleft {
+        margin-left: 10px;
+        display: inline;
+        text-align: center;
+    }
+    .whoambriimg {
+        left: 4%;
+        top: 50px;
+        width: 30%;
+    }
+    .whoambritext {
+        top: 10%;
+        left: 38%;
+    }
+    .whoh {
+        font-size: 15px;
+    }
+    .whoh span {
+        font-size: 20px;
+    }
+    .whoambrip {
+        width: 100%;
+        font-size: 10px;
+    }
+    .whoambrianatomy {
+        font-size: 10px;
+        width: 100%;
+    }
+    .whoambrianatomy span {
+        font-size:15px;
+    }
+}
