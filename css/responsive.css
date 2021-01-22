@@ -23,6 +23,7 @@
     .whoambriimg {
         left: 50%;
         top: 90px;
+        height: 251px;
         width: 30%;
         transform: translate(-50%,-10px);
     }
