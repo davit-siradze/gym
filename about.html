@@ -6,50 +6,105 @@
     <title>Ambri Official</title>
     <link rel="stylesheet" href="css/none.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-algeti-compact/css/bpg-algeti-compact.min.css">
+    <script src="https://kit.fontawesome.com/97ad557998.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
 </head>
 <body>
-    <div class="changelang">
-        <div class="geo">
-            <a class="geoa" href="ka/geo.html">
-                Geo
-            </a>
-        </div>
-        <div class="eng">
-            <a class="enga active" href="#">
-                Eng
-            </a>
-        </div>
-    </div>
     <header>
+        <div class="changelang">
+            <div class="geo">
+                <a class="geoa" href="ka/kaabout.html">
+                    Geo
+                </a>
+            </div>
+            <div class="eng">
+                <a class="enga active" href="#">
+                    Eng
+                </a>
+            </div>
+        </div>
         <div class="logo">
-            <a href="#">Ambri official</a>
+            <a href="#">Ambri <span>Official</span></a>
         </div>
-        <div class="lang">
-            <a href="#">Geo</a>
-            <span>/</span>
-            <a href="#">Eng</a>
-        </div>          
-        <div class="ambrimen">
-            <ul class="navul">
-                <li class="navli">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="navli">
-                    <a href="about.html">About Us</a>
-                </li>
-                <li class="navli">
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
+        <div class="men">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="hamburger-menu">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About Us</a>
+                        </li>
+                         <li class="nav-item">
+                            <a href="practice.html" class="nav-link">Practice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </header>   
-  
-    <div class="btn">
+        <div class="socialleft">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href=""><i class="fab fa-youtube"></i></a>
+        </div>
+    </header>
+    <section>
+        <div class="aboutambri">
+            <h1 class="abouth">
+               <span>Ambri</span> as an online trainer 
+            </h1>
+            <p class="aboutp">
+               <span>Ambri</span> - a hero in Georgian mythology, who is distinguished by enormous strength, height and weight. In the cycle of stories about Amirani, Ambri is associated with the motive of "burying him alive": a still alive Ambri leads twelve pairs of oxen to the burial site, his foot falling from a cart on the way, plowing the ground like a plow. The latter makes it possible to assume that the face of the amber originated in the farming population.
+            </p>
+            <div class="aboutimg">
+                <img class="mythimg" src="img/myh1.png" alt="ambri">
+            </div>    
+        </div>
+        <div class="aboutback">
+            <img class="abouutbackimg" src="img/testers.png" alt="#">
+        </div>
+    </section>
 
-    </div>
+    <!-- Messenger Section  -->
+        <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v9.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="103020538393407"
+  theme_color="#13cf13"
+  logged_in_greeting="მოგესალმებით"
+  logged_out_greeting="მოგესალმებით">
+      </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

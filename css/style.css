@@ -400,3 +400,89 @@ button {
   .btn-5 span:hover:after {
     width: 100%;
   }
+
+  /* About Ambri */
+
+.aboutambri {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+}
+
+
+.abouth {
+  color: #fff;
+  font-size: 20px;
+ }
+.abouth span {
+  color: #BC9354;
+  font-size: 25px;
+}
+.aboutp {
+  margin-top: 10px;
+  color: #fff;
+  width: 50%;
+  font-size: 16px;
+}
+.aboutp span {
+  color: #4aaa4e ;
+}
+.aboutimg {
+ position: absolute;
+ top: 10px;
+ right: 10%;
+}
+.mythimg  {
+  width: 400px;
+  height: 50%;
+  opacity: 0.6;
+  animation: myth infinite 10s;
+}
+
+
+@keyframes myth {
+  0%   {filter: blur(0px);}
+  10% {
+    filter: blur(1px);
+    transition: 0.875s ease-in-out;
+    
+  }
+  20% {
+    filter: blur(1.5px);
+    transition: 0.875s ease-in-out;
+
+  }
+  30%{
+    filter: blur(2px);
+    transition: 0.875s ease-in-out;
+
+  }
+  40% {
+    filter: blur(2.5px);
+    transition: 0.875s ease-in-out;
+
+  }
+}
+
+/* about Back Img */
+.aboutback {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: translate(-10%,-10%);
+
+}
+.abouutbackimg {
+  width: 400px;
+  opacity: 0.1;
+  height: 400px;
+  animation: backimg infinite 35s;
+}
+
+@keyframes backimg {
+  
+  100% {
+    transform: rotate(360deg);
+    filter: blur(8px);
+  }
+}

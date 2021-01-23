@@ -106,9 +106,47 @@ TweenMax.from(".enga", 2.3, {
   y:20,
   ease: Expo.easeInOut
 });
+TweenMax.from(".imgwraper",2.3, {
+  delay: 1.4,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInout
+});
 
+TweenMax.from(".anatompone",2.3, {
+  delay: 1.9,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInout
+});
+TweenMax.from(".anatomptwo",2.3, {
+  delay: 2.4,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInout
+});
+TweenMax.from(".aboutp",2.3, {
+  delay: 3.2,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInout
+});
+TweenMax.from(".abouth",2.3, {
+  delay: 3.2,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInout
+});
+TweenMax.from(".aboutback", 2.3, {
+  delay: 0.7,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInOut
+});
 
-
-
-
-
+TweenMax.from(".mythimg", 2.3, {
+  delay: 1.4,
+  opacity:0,
+  y:20,
+  ease: Expo.easeInOut
+});
