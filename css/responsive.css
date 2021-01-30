@@ -93,3 +93,14 @@
         font-size: 30px;
     }
 }
+/* Iphone 7/6/6s */
+@media screen and (max-width: 375px),
+       screen and (max-height:667px)
+       {
+        .right{
+            display: none;
+        }
+        .hant {
+            top: 78%;
+        }   
+}
