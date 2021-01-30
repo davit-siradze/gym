@@ -1,52 +1,95 @@
-@media screen and (max-width: 780px){
-    .right{
-        top:100%;
-        left: 20%;
+@media screen and (max-width: 800px)
+{
+    .right {
+        top: 75%;
+        right: 20%;
     }
     .right a {
+        font-size: 40px;
+        opacity: 0.432;
         transform: rotate(0deg);
-        font-size: 20px;
-        opacity: 0.7;
-        filter: blur(1.9px);
+        filter: blur(2px);
+    }
+    .whoambri {
+    top: 15%;
+    left: 37%;
+    }
+    .whoambritext  {
+        left: 17%;
+        top: 35%;
     }
 }
-
-
-
-@media screen and (max-width: 390px)
-{
-    .socialleft {
-        margin-left: 10px;
-        display: inline;
-        text-align: center;
+@media screen and (max-width:640px){
+    .whoambri {
+        top: 14%;
+        left: 32%;
     }
-    .whoambriimg {
-        left: 50%;
-        top: 90px;
-        height: 251px;
-        width: 30%;
-        transform: translate(-50%,-10px);
+    .whoambritext{
+        left: 7%;
+        font-size: 13px;
     }
-    .whoambritext {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .whoh {
-        font-size: 15px;
-    }
-    .whoh span {
+    .whoh{
         font-size: 20px;
     }
-    .whoambrip {
-        width: 100%;
-        font-size: 10px;
+    .whow span {
+        font-size: 21px;
     }
-    .whoambrianatomy {
-        font-size: 10px;
-        width: 100%;
+}
+@media screen and (max-width:640px){
+    .whoambritext {
+        width: 450px;
+
     }
-    .whoambrianatomy span {
-        font-size:15px;
+    .whoambri {
+        left: 35%;
+    }
+    .whoambri img {
+        width: 70%;
+    }
+}
+@media screen and (max-width:480px){
+    .whoambritext{
+        left: 20%;
+        width: 300px;
+    }
+}
+@media screen and (max-width:390px){
+    .hant img {
+        width: 50%;
+        
+    }
+    .hant {
+        top: 67%;
+    }
+    .whoambritext {
+        left: 14%;
+        top: 30%;
+    }
+    .right {
+        top: 80%;
+    }
+    .right a{
+        font-size: 32px;
+
+    }
+}
+@media screen and (max-width:350px){
+    .whoambritext{
+        left: 7%;
+    }
+}
+@media screen and (max-width:324px){
+    .whoambritext {
+        font-size: 11px;
+        left: 2%;
+    }
+    .whoh {
+        font-size: 18px;
+    }
+    .whoh span{
+        font-size: 20px;
+    }
+    .right a {
+        font-size: 30px;
     }
 }

@@ -1,0 +1,52 @@
+@import url("https://cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+.contacth1 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 4%;
+    font-family: 'Raleway', sans-serif;
+}
+.text-center {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Raleway', sans-serif;
+}
+.text-danger {
+    color: red;
+    font-size: 19px;
+    font-family: 'Raleway', sans-serif;
+}
+label {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+}
+.btns-primary {
+    background-color: #fff;
+    border-color: #1a1917;
+    transition: 1s ease-in;
+}
+.btns-primary:hover {
+    background-color: #fff;
+    color: #fff;
+    transition: 1s ease-in;
+}
+.container {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.contacttitle {
+    position: absolute;
+    top: 50%;
+}
+
+@media screen and (max-width: 400px){
+    label {
+        width: 100px;
+    }
+}

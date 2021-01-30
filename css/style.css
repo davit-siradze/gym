@@ -11,9 +11,9 @@ body {
 /* Change Lang */
 .changelang {
   position: absolute;
-  top: 29px;
+  top: 26.5px;
   display: flex;
-  left:120px;
+  left:140px;
 }
 .geoa {
   margin-right: 10px;
@@ -160,136 +160,134 @@ body {
 }
 
 /* Section 1  */
-
-.whoambri {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    display: flex;
+.loadsec {
+  max-width: 100vh;
+  max-height: 100vh;
 }
-.whoambriimg {
-    position: relative;
-    left: 5%;
-    top: 80px;
+.whoambri {
+  width: 190px;
+  height: 400px;
+  position: absolute;
+  top: 17%;
+  left: 10%;
 }
 .whoambritext {
-    position: absolute;
-    top: 30%;
-    left: 17%;
-
+  color: #fff;
+  top: 30%;
+  position: absolute;
+  left: 24%;
+  text-align: center;
+  width: 500px;
 }
 .whoh {
-    color: #fff;
-    font-size: 25px;
+  font-size: 25px;
+  margin-bottom:15px;
 }
 .whoh span {
-    color: #BC9354;
-    font-size: 30px;
+  color:#BC9354;
+  font-size: 30px;
 }
-.whoambrip {
-    margin-top: 8px;
-    color: #fff;
-    width: 50%;
+.whoambrip, .whoambrianatomy {
+  margin-bottom: 10px;
 }
-.whoambrianatomy {
-    color: #fff;
-    width: 50%;
-    margin-top: 10px;
-}
-.whoambrianatomy span {
-    font-size: 24px;
-    color: #BC9354;
-}
-/* font-family: "Montserrat", sans-serif; */
 .right {
-    position: absolute;
-    top: 70%;
-    right:0%;
-    transform: translate(-30%,-40%);
+  position: absolute;
+  top: 40%;
+  right: 60px;
 }
 .right a {
-    font-size: 50px;
-    color: #fff;
-    transform: rotate(90deg);
-    font-family:"Montserrat", sans-serif;
-    cursor: default;
+  color: #fff;
+  font-size: 50px;
+  transform: rotate(90deg);
+  font-family:"Montserrat", sans-serif;
+  cursor: default;
 }
+/* btn */
 button {
-    margin: 20px;
+  margin: 20px;
+  width: 130px;
+  height: 40px;
 }
 .custom-btn {
-    padding: 10px 25px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    outline: none !important;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-  }
-  .btn-4 {
-    width: 130px;
-    height: 40px;
-    line-height: 42px;
-    padding: 0;
-    border: none;
-  }
-  .btn-4 span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  .btn-4:before,
-  .btn-4:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 0;
-    background: #fff;
-    transition: all 0.3s ease;
-  }
-  .btn-4:before {
-    height: 50%;
-    width: 2px;
-  }
-  .btn-4:after {
-    width: 20%;
-    height: 2px;
-  }
-  .btn-4:hover:before {
-    height: 100%;
-  }
-  .btn-4:hover:after {
-    width: 100%;
-  }
-  .btn-4 span:before,
-  .btn-4 span:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    background: #fff;
-    transition: all 0.3s ease;
-  }
-  .btn-4 span:before {
-    width: 2px;
-    height: 50%;
-  }
-  .btn-4 span:after {
-    width: 20%;
-    height: 2px;
-  }
-  .btn-4 span:hover:before {
-    height: 100%;
-  }
-  .btn-4 span:hover:after {
-    width: 100%;
-  }
-
-
+  padding: 10px 25px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.btn-4 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-4 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-4:before,
+.btn-4:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.btn-4:before {
+  height: 50%;
+  width: 2px;
+}
+.btn-4:after {
+  width: 20%;
+  height: 2px;
+}
+.btn-4:hover:before {
+  height: 100%;
+}
+.btn-4:hover:after {
+  width: 100%;
+}
+.btn-4 span:before,
+.btn-4 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.btn-4 span:before {
+  width: 2px;
+  height: 50%;
+}
+.btn-4 span:after {
+  width: 20%;
+  height: 2px;
+}
+.btn-4 span:hover:before {
+  height: 100%;
+}
+.btn-4 span:hover:after {
+  width: 100%;
+}
+.hant {
+  position: absolute;
+  top: 70%;
+  opacity: 0.4;
+  filter: blur(1px);
+}
+.hant img {
+  width: 20%;
+}
 /* About Anatomy  */
 
 .imgwraper {
@@ -302,9 +300,7 @@ button {
     display: flex;
     width: 55%;
 }
-/* .anatomyp {
-  display: flex;
-} */
+
 .anatompone{
     color: #fff;
     position: relative;
@@ -413,6 +409,7 @@ button {
 .abouth {
   color: #fff;
   font-size: 20px;
+  z-index: 1;
  }
 .abouth span {
   color: #BC9354;
@@ -423,6 +420,7 @@ button {
   color: #fff;
   width: 50%;
   font-size: 16px;
+  z-index: 1;
 }
 .aboutp span {
   color: #4aaa4e ;
@@ -436,9 +434,32 @@ button {
   width: 400px;
   height: 50%;
   opacity: 0.6;
-  animation: myth infinite 10s;
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
-
+.aboutimgback {
+  position: absolute;
+  top: 10px;
+  right: 10%;
+}
+.mythimg1 {
+  width: 400px;
+  height: 50%;
+  opacity: 0.5;
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce { 
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+.ball {
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
 
 @keyframes myth {
   0%   {filter: blur(0px);}
@@ -468,6 +489,7 @@ button {
 .aboutback {
   position: absolute;
   top: 30%;
+  z-index: 0;
   left: 10%;
   transform: translate(-10%,-10%);
 
@@ -486,3 +508,16 @@ button {
     filter: blur(8px);
   }
 }
+/* practice */
+.practicesec {width: 100vh; height: 80vh;}
+.practicepage {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  transform: rotate(90deg);
+}
+.practicepage h1 {
+  color: #fff;
+  font-size: 55px;
+}
+

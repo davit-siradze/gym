@@ -11,8 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/97ad557998.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-
-</head>
 <body>
     <header>
         <div class="changelang">
@@ -49,7 +47,7 @@
                             <a href="practice.html" class="nav-link">Practice</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Contact</a>
+                            <a href="contact.php" class="nav-link">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -63,7 +61,7 @@
     </header>
     <section>
         <div class="aboutambri">
-            <h1 class="abouth">
+            <h1 class="abouth" id="quote">
                <span>Ambri</span> as an online trainer 
             </h1>
             <p class="aboutp">
@@ -72,39 +70,19 @@
             <div class="aboutimg">
                 <img class="mythimg" src="img/myh1.png" alt="ambri">
             </div>    
+            <div class="aboutimgback">
+                <img class="mythimg1" src="img/fav.png" alt="ambri">
+            </div>
         </div>
         <div class="aboutback">
             <img class="abouutbackimg" src="img/testers.png" alt="#">
         </div>
+       
     </section>
+    
 
-    <!-- Messenger Section  -->
-        <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v9.0'
-          });
-        };
-
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
-
-      <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution=setup_tool
-        page_id="103020538393407"
-  theme_color="#13cf13"
-  logged_in_greeting="მოგესალმებით"
-  logged_out_greeting="მოგესალმებით">
-      </div>
+      
     <script src="js/script.js"></script>
+    
 </body>
 </html>

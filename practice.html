@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/97ad557998.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 <body>
     <div class="changelang">
@@ -49,7 +49,7 @@
                             <a href="practice.html" class="nav-link">Practice</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Contact</a>
+                            <a href="contact.php" class="nav-link">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -61,38 +61,33 @@
            <a href=""><i class="fab fa-youtube"></i></a>
         </div>
     </header>
-    <section>
-        <div class="--imgwraper">
-          
-        </div>
-    </section>
- <!-- Messenger Section  -->
-        <!-- Load Facebook SDK for JavaScript -->
-        <div id="fb-root"></div>
+    <section class="practicesec">
+    <div class="alert">
         <script>
-          window.fbAsyncInit = function() {
-            FB.init({
-              xfbml            : true,
-              version          : 'v9.0'
-            });
-          };
-  
-          (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-  
-        <!-- Your Chat Plugin code -->
-        <div class="fb-customerchat"
-          attribution=setup_tool
-          page_id="103020538393407"
-    theme_color="#13cf13"
-    logged_in_greeting="მოგესალმებით"
-    logged_out_greeting="მოგესალმებით">
-        </div>
+       Swal.fire({
+          title: 'We would like to inform you that the first month of internship is free. ',
+          showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+          }
+        })
+        </script>
+    </div>
+
+    <div class="practicepage">
+        <h1>
+            Practice 
+        </h1>
+    </div>  
+    <div class="calendar">
+        <div id="calendar"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+    </div>
+
+    </section>
     <script src="js/script.js"></script>
+    <script src="js/calendar.js"></script>
 </body>
 </html>

@@ -49,7 +49,7 @@
                             <a href="practice.html" class="nav-link">Practice</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Contact</a>
+                            <a href="contact.php" class="nav-link">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -58,17 +58,18 @@
         <div class="socialleft">
            <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
-           <a href=""><i class="fab fa-youtube"></i></a>
+           <a href="#"><i class="fab fa-youtube"></i></a>
+           <a href="reg/registration.php"><i class="fas fa-user"></i></a>
         </div>
     </header>
-    <section>
+    <section class="loadsec">
         <div class="whoambri">
             <img class="whoambriimg" src="img/2.png" alt="#">
         </div>
         <div class="whoambritext">
-            <h1 class="whoh">
+            <p class="whoh">
                 Ambri will take care of your healthy life for <span>free.</span>  
-            </h1>
+            </p>
             <p class="whoambrip">
                 Ambri is a practical website tailored to you where you can develop your body.
                 The main thing for us is to motivate you for a healthy life, proper exercise is a guarantee of a healthy life.
@@ -82,37 +83,13 @@
                 </a>
             </div>
             
-        <div class="right">
-            <a href="#">Right Training </a>
-        </div>
     </section>
- <!-- Messenger Section  -->
-        <!-- Load Facebook SDK for JavaScript -->
-        <div id="fb-root"></div>
-        <script>
-          window.fbAsyncInit = function() {
-            FB.init({
-              xfbml            : true,
-              version          : 'v9.0'
-            });
-          };
-  
-          (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-  
-        <!-- Your Chat Plugin code -->
-        <div class="fb-customerchat"
-          attribution=setup_tool
-          page_id="103020538393407"
-    theme_color="#13cf13"
-    logged_in_greeting="მოგესალმებით"
-    logged_out_greeting="მოგესალმებით">
-        </div>
+    <div class="right">
+        <a href="#">Right Training </a>
+    </div>
+    <div class="hant">
+        <img src="img/hant.png" alt="#">
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
