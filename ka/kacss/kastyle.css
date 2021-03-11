@@ -9,20 +9,13 @@
     font-family: "BPG Nino Mtavruli Bold", sans-serif;
     
 }
-.logo {
-    display: flex;
-}
-.logo a {
-    position: absolute;
-    font-size: 24px;
-    color: #fff;
-    top: 25px;
-    left: 50%;
-    transform: translate(-50%);
-
-}
-.logo a span {
-    color: #BC9354;
+#logo{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+ }
+.logo{
+  width: 120px;
 }
 /* Change Lang */
 .changelang {

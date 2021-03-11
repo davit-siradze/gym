@@ -41,7 +41,7 @@
 
     }
     .whoambri {
-        left: 35%;
+        left: 27%;
     }
     .whoambri img {
         width: 70%;
@@ -123,6 +123,13 @@
 @media screen and (max-width: 375px),
        screen and (max-height:667px)
        {
+        header{
+            position: fixed;
+            z-index: 2;
+        }
+        .geoa, .enga {
+            font-size: 12px;
+        }
         .right{
             display: none;
         }
@@ -132,4 +139,105 @@
         .btn-4 {
             z-index: 20000;
         }
-}
+        .whoambri {
+            left: 30%;
+        }
+        .logo {
+            margin-top: 15%;
+            width: 90px;
+        }
+        .line {
+            width: 90%;
+        }
+        .hamburger-menu {
+            top: 35px;
+        }
+        .hant img {
+            display: none;
+        }
+        .whoambritext {
+            left: 11%;
+        }
+        .navbar {
+            width: 375px;
+            right: -375px;;
+            background-color: #0000008f;
+        }
+        .change {
+            right: 0;
+        }
+        .aboutback {
+            display: none;
+        }
+        .mythimg1, .mythimg {
+            width: 150px;
+        }
+        .aboutimgback , .aboutimg{
+            top: 70%;
+        }
+        .abouttxt {
+            top: 25%;
+            left: 24%;
+        }
+        .abouth span {
+            font-size: 18px;
+        }
+        .abouth {
+            font-size: 15px;
+            width: 55%;
+             text-align: center;
+             width: 200px;
+        }
+        .aboutp {
+            text-align: center;
+            font-size: 12px;
+            width: 200px;
+        }
+        .practicmen {
+            flex-wrap: wrap;
+        
+        }
+
+        .myBtnszr2 {
+            top: 63%;
+            left: 46%;
+        }
+        .myBtnsuk{
+            top: 77%;
+            left: 46%;
+        }
+        .myBtnskan{
+            top: 84%;
+            left: 33%;
+        }
+        .myBtnszr {
+            top: 62%;
+            left: 33%;
+        }    
+        .myBtndundul {
+        top: 69%;
+        left: 31%;
+        }
+        .myBtnmaj{
+        top: 66%;
+        right: 59%
+        }
+        .myBtntmxr {
+        top: 57%;
+        left: 25%;
+        }
+        .vid {
+            width: 100%;
+            height: 250px;
+        }
+        .myBtnsbck{    
+        left: 40%;
+        width: 8%; 
+        top: 54%;
+        }
+        .myBtntric{    
+        left: 23%;
+        width: 22px;
+        top: 61%;
+        }
+}       

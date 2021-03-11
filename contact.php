@@ -63,8 +63,10 @@ if(isset($_POST['submit']))
                 </a>
             </div>
         </div>
-        <div class="logo">
-            <a href="index.html" style="text-decoration:none; font-family: 'Raleway', sans-serif;" >Ambri <span>Official</span></a>
+        <div id="logo">
+            <a href="index.php">
+                <img class="logo" src="img/ambri logo-01.png" alt="">
+            </a>
         </div>
         <div class="men">
             <div class="phpmenu">

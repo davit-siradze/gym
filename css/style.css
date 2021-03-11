@@ -2,7 +2,9 @@
  */
  @import url("https://cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css");
  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
-body {
+ @import url("https://cdn.web-fonts.ge/fonts/bpg-nino-mtavruli-bold/css/bpg-nino-mtavruli-bold.min.css");
+
+ body {
     background-color: #000;
     font-family: 'Raleway', sans-serif;
     
@@ -34,20 +36,13 @@ body {
   transition: 0.576s ease-in;
 }
 /* Change Lang End */
-.logo {
-    display: flex;
-}
-.logo a {
-    position: absolute;
-    font-size: 24px;
-    color: #fff;
-    top: 25px;
-    left: 50%;
-    transform: translate(-50%);
-
-}
-.logo a span {
-    color: #BC9354;
+#logo{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+ }
+.logo{
+  width: 120px;
 }
 /* Burg men */
 .navbar {
@@ -289,7 +284,10 @@ button {
   width: 20%;
 }
 /* About Anatomy  */
-
+.practicesec {
+  width: 100%;
+  height: 800px;
+}
 .imgwraper {
     position: absolute;
     top: 10%;
@@ -398,11 +396,16 @@ button {
   }
 
   /* About Ambri */
-
-.aboutambri {
+.aboutambrisect {
+  width: 100%;
+  height: 830px;
+}
+.abouttxt {
   position: absolute;
-  top: 20%;
-  left: 2%;
+  top:35%;
+  left: 5%;
+  max-width: 100%;
+  max-height: 400px;
 }
 
 
@@ -427,7 +430,7 @@ button {
 }
 .aboutimg {
  position: absolute;
- top: 10px;
+ top: 20%;
  right: 10%;
 }
 .mythimg  {
@@ -440,8 +443,8 @@ button {
 }
 .aboutimgback {
   position: absolute;
-  top: 10px;
-  right: 10%;
+  top: 20%;
+  right: 9.7%;
 }
 .mythimg1 {
   width: 400px;
@@ -508,16 +511,580 @@ button {
     filter: blur(8px);
   }
 }
+
 /* practice */
-.practicesec {width: 100vh; height: 80vh;}
-.practicepage {
+/* Musc Men */
+.textpract {
   position: absolute;
-  top: 25%;
-  right: 5%;
-  transform: rotate(90deg);
+  bottom: 17%;
+  left: 20%;
+  transform: translate(10px, 10px);
 }
-.practicepage h1 {
+.textpract h1 {
   color: #fff;
-  font-size: 55px;
+  filter: brightness(0.453);
+  font-size: 30px;
+  font-family: "BPG Nino Mtavruli Bold", sans-serif;
+
+}
+.practicmen {
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.muscimg , .muscbackimg {
+  width: 300px;
 }
 
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* გულმკერდ */
+.closes {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closes:hover,
+.closes:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* ხელის(9) */
+.closes1 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closes1:hover,
+.closes1:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* ხელის კუნთი (!0) */
+.closes10 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closes10:hover,
+.closes10:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* პრესი */
+.closes11 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closes11:hover,
+.closes11:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 15 */
+.closes15 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closes15:hover,
+.closes15:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 2 */
+.closes2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closes2:hover,
+.closes2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* trapecia */
+.closesbck {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closesbck:hover,
+.closesbck:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* zurgis uganieresi */
+.closeszr {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeszr:hover,
+.closeszr:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* zrugis uganieresi(2) */
+.closeszr2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeszr2:hover,
+.closeszr2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* ukana */
+.closesuk {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closesuk:hover,
+.closesuk:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*kanchi */
+
+.closeskan {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeskan:hover,
+.closeskan:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* tric */
+.closetroc {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closetroc:hover,
+.closetroc:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* maja closemaj */
+.closemaj {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closemaj:hover,
+.closemaj:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* დალტისებრი */
+.closemxr {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closemxr:hover,
+.closemxr:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* dundul */
+.closesdundul {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closesdundul:hover,
+.closesdundul:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* close 12 */
+.closes12 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closes12:hover,
+.closes12:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* close 13 */
+.closes13 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closes13:hover,
+.closes13:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* close 14 */
+.closes14 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closes14:hover,
+.closes14:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Close BUttonsd */
+.myBtn {
+  position: absolute;
+  top: 43px;
+  left: 122px;
+  padding: 4px;
+  outline: none;
+  width: 9px;
+  height: 4px;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  border-bottom-left-radius: 18px 21px;
+}
+.myBtns {
+  outline: none;
+  position: absolute;
+  top: 65px;
+  width: 65px;
+  height: 26px;
+  left: 102px;
+  border-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+.myBtns1{
+  outline: none;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 62px;
+  width: 20px;
+  border-bottom-left-radius: 18px 20px;
+  border-top-right-radius: 20px 10px;
+  height: 20px;
+  left: 170px;
+}
+.myBtns10 {
+  outline: none;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 90px;
+  left: 170px;
+  width: 20px;
+  height: 23px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 21px 20px;
+}
+.myBtns11 {
+  outline: none;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 94px;
+  left: 117px;
+  width: 36px;
+  height: 80px;
+  border-radius: 21px;
+}
+.myBtns15 {
+  outline: none;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 133px;
+  left: 100px;
+  width: 13px;
+  height: 25px;
+  border-top-left-radius: 9px;
+  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: 5px;
+}
+.myBtns2{
+  outline: none;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 127px;
+  left: 69px;
+  width: 23px;
+  height: 41px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 9px;
+}
+.myBtnsbck {
+  outline: none;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  height: 81px;
+  left: 69%;
+  width: 6%;
+  border-top-left-radius: 35%;
+  border-bottom-left-radius: 22%;
+  border-bottom-right-radius: 41%;
+  border-top-right-radius: 40%;
+}
+.myBtnszr {
+  outline: none;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 106px;
+  left: 400px;
+  width: 22px;
+  border-top-left-radius: 20%;
+  border-bottom-left-radius: 20%;
+  transform: rotate(-20deg);
+}
+.myBtnszr2 {
+  outline: none;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 117px;
+  left: 435px;
+  width: 20px;
+  height: 47px;
+  transform: rotate(12deg);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.myBtnsuk {
+  outline: none;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 229px;
+  left: 436px;
+  border-bottom-right-radius: 15px;
+  width: 23px;
+  border-top-left-radius: 20px;
+}
+.myBtnskan{
+  outline: none;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 283px;
+  left: 401px;
+  width: 58px;
+}
+.vid {
+  margin-top: 20px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+.myBtntric {
+  outline: none;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: 28%;
+  width: 22px;
+  top: 22%;
+}
+.myBtnmaj {
+  outline: none;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 34%;
+   width: 20px;
+  right: 30%;
+  transform: rotate(15deg);
+}
+.myBtntmxr {
+  outline: none;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 13%;
+  left: 63%;
+  width: 14px;
+  height: 23px;
+  transform: rotate(45deg);
+}
+.myBtndundul {
+  outline: none;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 39%;
+  left: 65%;
+  width: 77px;
+}
+.myBtns12 {
+  outline: none;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 23%;
+  width: 35px;
+  border-top-left-radius: 51%;
+  height: 50px;
+}
+.myBtns13 {
+  outline: none;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 23%;
+  width: 10px;
+  transform: rotate(29deg);
+}
+.myBtns14 {
+  outline: none;
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 68%;
+  left: 25%;
+  width: 14px;
+}
+.vida {
+  text-align: center;
+  margin-top: 23px;
+  color: #fff;
+  font-family: 'BPG Arial';
+  background-color: #000;
+  width: 110px;
+  padding: 12px;
+  height: 40px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 22px;
+  transition: 0.402s ease-in;
+
+}
+.vida:hover {
+  transition: 0.452s ease-in;
+  color: #000;
+  background-color: #fff;
+}
